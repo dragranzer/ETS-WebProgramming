@@ -1,0 +1,85 @@
+.Item{
+    width: 18%;
+    padding: 20px;
+    border: 1px solid;
+    height: 300px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: linear-gradient(157.58deg, rgba(255, 255, 255, 0.5) 4.6%, rgba(207, 206, 206, 0.5) 85.4%);
+    backdrop-filter: blur(3px);
+    border-radius: 20px;
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+.ItemImg{
+    width: 100%;
+    border-radius: 20px;
+    height: 150px;
+    margin: auto;
+}
+
+.title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+.detail{
+    width: 96px;
+    height: 31px;
+    background: #4F698F;
+    border-radius: 20px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    padding-top: 5px;
+    display: inline-block;
+    margin-right: 19px;
+}
+
+.buy{
+    width: 96px;
+    height: 31px;
+    background: #29264A;
+    border-radius: 20px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    padding-top: 5px;
+    display: inline-block;
+    margin-left: 19px;
+}
+
+.buy:hover{
+    background: #5e55a8;
+}
+
+.detail:hover{
+    background: #7aa0da;
+}
+
+.ket{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+    /* align-items: center;
+    text-align: center;
+    margin: auto; */
+}

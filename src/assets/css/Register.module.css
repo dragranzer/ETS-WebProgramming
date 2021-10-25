@@ -1,0 +1,91 @@
+.body{
+    height: 700px;
+    width: 100%;
+    background-image: url('../img/96622.jpg');
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-top: 70px;
+}
+
+.registerBox{
+    width: 55%;
+    height: 544px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, #D0D0D0 100%);
+    border-radius: 20px;
+    margin: auto;
+}
+
+.errMsg{
+    /* background-color: aqua; */
+    width: 70%;
+    margin-left: 70px;
+    color: red;
+}
+
+input{
+    width: 320px;
+    margin-left: 15%;
+    border-radius: 20px;
+    border-width:0px;
+    border:none;
+}
+
+.caption{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    margin-left: 15%;
+    margin-top: 10px;
+}
+
+.title{
+    text-align: center;
+    font-family: Rochester;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+}
+
+.signin{
+    width: 150px;
+    height: 40px;  
+    background: #4964AB;
+    border-radius: 20px;
+    text-align: center;
+    margin: auto;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.signin p{
+    padding-top: 5px;
+    color: white;
+}
+
+.box{
+    /* background-color: aqua; */
+    width: 90%;
+}
+
+.link{
+    background-color: aqua;
+}
+
+.radio{
+    margin-left: -100px;
+    background-color: white;
+}
+
+.radioLabel{
+    margin-left: 0;
+}
+
+.captionPassC{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    margin-left: 15%;
+    margin-top: 32px;
+
+}

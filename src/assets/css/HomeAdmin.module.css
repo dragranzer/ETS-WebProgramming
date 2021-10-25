@@ -1,0 +1,7 @@
+.body{
+    width: 100%;
+    min-height: 700px;
+    height: 100%;
+    background-image: url('../img/Deep-sea.jpg');
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}

@@ -1,0 +1,56 @@
+.body{
+    width: 100%;
+    height: 1000px;
+    background-image: url('../img/92-925774_sea-coral-wallpaper-hd.jpg');
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-top: 100px;
+}
+
+.box{
+    width: 838px;
+    height: 500px;
+    background: linear-gradient(180deg, #29264A 0%, rgba(41, 38, 74, 0.5) 100%);
+    backdrop-filter: blur(25px);
+    margin: auto;
+    border-radius: 20px;
+}
+
+.title{
+    font-family: Rochester;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 62px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.table{
+    color: #FFFFFF;
+    border-collapse: collapse;
+    margin: auto;
+    border: 1px solid black;
+}
+
+.jumlahBarang{
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.buy{
+    width: 96px;
+    height: 31px;
+    background: #29264A;
+    border-radius: 20px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    padding-top: 5px;
+    margin-left: 19px;
+    margin: auto;
+}
+
+.buy:hover{
+    background: #5e55a8;
+}

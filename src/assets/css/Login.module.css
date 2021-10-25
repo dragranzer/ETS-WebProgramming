@@ -1,0 +1,82 @@
+.body{
+    height: 700px;
+    width: 100%;
+    background-image: url('../img/96622.jpg');
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-top: 70px;
+}
+
+.loginBox{
+    width: 460px;
+    height: 544px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, #D0D0D0 100%);
+    backdrop-filter: blur(44px);
+}
+
+.title{
+    text-align: center;
+    font-family: Rochester;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+}
+
+.caption{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    margin-left: 15%;
+    margin-top: 10px;
+}
+
+input{
+    width: 320px;
+    margin-left: 15%;
+    border-radius: 20px;
+    border-width:0px;
+    border:none;
+}
+
+.admin{
+    text-align: center;
+    margin-top: 130px;
+    text-decoration: none;
+}
+
+.admin p{
+    text-decoration: none;
+}
+
+.signin{
+    width: 150px;
+    height: 40px;  
+    background: #4964AB;
+    border-radius: 20px;
+    text-align: center;
+    margin: auto;
+    text-decoration: none;
+    margin-top: 30px;
+}
+
+.signin:hover{
+    background: #6277ad;
+}
+
+.signin p{
+    padding-top: 5px;
+    color: white;
+}
+
+.errMsg{
+    text-align: center;
+    color: red;
+}
+
+.signUp p{
+    text-align: center;
+    text-decoration: none;
+}
