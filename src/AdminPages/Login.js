@@ -66,7 +66,7 @@ function Login() {
         }else{
             swal({
                 title: "Error",
-                text: "Mohon Lengkapi Data",
+                text: "Please Fill The Required Fields",
                 icon: "error",
             });
         }
@@ -79,27 +79,27 @@ function Login() {
                 <div className={styles.loginBox}>
                     <div className={styles.contentBox}>
                         <div className={styles.title}>
-                            Login Admin
+                            Admin Login
                         </div>
                         <div className={styles.caption}>
-                            Username:
+                            Username
                         </div>
-                        <input type="text" placeholder="      Username" value={state.nama} name="nama" onChange={onChange}/>
+                        <input type="text" placeholder="Enter your username" value={state.nama} name="nama" onChange={onChange}/>
                         <div className={styles.caption}>
-                            Password:
+                            Password
                         </div>
-                        <input type="password" placeholder="      Password" value={state.password} name="password" onChange={onChange}/>
+                        <input type="password" placeholder="Enter your password" value={state.password} name="password" onChange={onChange}/>
                     </div>
                     <div className={styles.signin} onClick={handleSubmit}>
                         <p>Login</p>
                     </div>
                     <div className={styles.errMsg}>
-                        {errMsg ? "Username dan Password tidak cocok\n":""}
-                        {errMsgName? "Username Tidak ditemukan":""}
+                        {errMsg ? "Username or Password doesn't match\n":""}
+                        {errMsgName? "Username doesn't exist":""}
                     </div>
                     <Link to="/">
                         <div className={styles.admin}>
-                            Login sebagai User?
+                            <p>Login as User?</p>
                         </div>
                     </Link>
                 </div>

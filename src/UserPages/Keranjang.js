@@ -26,14 +26,14 @@ function Keranjang() {
             <div className={styles.body}>
                 <div className={styles.box}>
                     <div className={styles.title}>
-                        Keranjang
+                        Shopping Cart
                     </div>
                     <table cellPadding="10px" cellSpacing="0" className={styles.table}>
                         <thead bgcolor="#4F698F">
-                            <td>Nama</td>
-                            <td>Harga</td>
-                            <td>Jumlah</td>
-                            <td>Total Harga</td>
+                            <td>Name</td>
+                            <td>Price</td>
+                            <td>Count</td>
+                            <td>Total Price</td>
                             <td>Action</td>
                         </thead>
                         <tbody>
@@ -49,7 +49,7 @@ function Keranjang() {
                         </tbody>
                     </table>
                     <div className={styles.jumlahBarang}>
-                        Jumlah Barang: {jumlahBarang}
+                        Total Item: {jumlahBarang}
                     </div>
                     <div className={styles.buy} onClick={checkoutClick}>
                         Checkout

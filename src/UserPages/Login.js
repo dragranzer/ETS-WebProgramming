@@ -78,7 +78,7 @@ function Login() {
         }else{
             swal({
                 title: "Error",
-                text: "Mohon Lengkapi Data",
+                text: "Please Fill The Required Fields",
                 icon: "error",
             });
         }
@@ -98,13 +98,13 @@ function Login() {
                             Login
                         </div>
                         <div className={styles.caption}>
-                            Username:
+                            Username
                         </div>
-                        <input type="text" placeholder="      Username" value={state.nama} name="nama" onChange={onChange}/>
+                        <input type="text" placeholder="Enter your username" value={state.nama} name="nama" onChange={onChange}/>
                         <div className={styles.caption}>
-                            Password:
+                            Password
                         </div>
-                        <input type="password" placeholder="      Password" value={state.password} name="password" onChange={onChange}/>
+                        <input type="password" placeholder="Enter your password" value={state.password} name="password" onChange={onChange}/>
                     </div>
                     <div className={styles.signin} onClick={handleSubmit}>
                         
@@ -112,15 +112,15 @@ function Login() {
                         
                     </div>
                     <div className={styles.errMsg}>
-                        {errMsg ? "Username dan Password tidak cocok":""}
-                        {errMsgName? "Username Tidak ditemukan":""}
+                        {errMsg ? "Username or Password doesn't match":""}
+                        {errMsgName? "Username doesn't exist":""}
                     </div>
                     <div className={styles.signUp}>
-                        <p>Belum punya akun? <Link to ="/register">Daftar</Link></p>
+                        <p>Don't have an account? <Link to ="/register">Sign Up</Link></p>
                     </div>
                     <Link to="/log-admin">
                         <div className={styles.admin}>
-                            <p>Login sebagai admin?</p>
+                            <p>Login as admin?</p>
                         </div>
                     </Link>
                 </div>

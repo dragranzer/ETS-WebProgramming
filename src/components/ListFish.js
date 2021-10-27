@@ -28,7 +28,7 @@ const ListFish = ({category, description, harga, id, imgUrl, stock, name}) => {
                 {name}
             </div>
             <div className={styles.ket}>
-                Harga: Rp.{harga}
+                Price: Rp.{harga}
             </div>
             <div className={styles.ket}>
                 Stock: {stock}

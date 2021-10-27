@@ -12,6 +12,7 @@
     margin-left: auto;
     margin-right: auto;
     border-radius: 20px;
+    padding: 20px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, #D0D0D0 100%);
     backdrop-filter: blur(44px);
 }
@@ -21,21 +22,21 @@
     font-family: Rochester;
     font-style: normal;
     font-weight: normal;
-    font-size: 64px;
+    font-size: 48px;
 }
 
 .caption{
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    margin-left: 15%;
+    font-size: 20px;
+    margin-left: 10px;
     margin-top: 10px;
 }
 
 input{
     width: 320px;
-    margin-left: 15%;
+    padding: 5px 20px;
     border-radius: 20px;
     border-width:0px;
     border:none;
@@ -49,6 +50,7 @@ input{
 
 .admin p{
     text-decoration: none;
+    font-size: 18px;
 }
 
 .signin{
@@ -60,6 +62,7 @@ input{
     margin: auto;
     text-decoration: none;
     margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .signin:hover{

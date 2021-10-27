@@ -12,18 +12,15 @@ function AboutUsLogin() {
                 <div className={styles.contentBox}>
                     <div className={styles.title}>
                         About Us
+                        <hr></hr>
                     </div>
+                   
                     <div className={styles.content}>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
-                            nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-                            sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
+                        <h2>We Are The Best Ornamental Fish Seller</h2>
                     </div>
-                    <button onClick={()=>history.push("/")}>Go home</button>
+                    <div className={styles.button}>
+                        <button onClick={()=>history.push("/")}>Back to home page</button>
+                    </div>
                 </div>
             </div>
         </div>

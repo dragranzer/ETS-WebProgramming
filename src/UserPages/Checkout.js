@@ -227,7 +227,7 @@ function ReviewPembelian() {
         }else{
             swal({
                 title: "Error",
-                text: "Mohon Lengkapi Data",
+                text: "Please Fill The Required Fields",
                 icon: "error",
             });
         }
@@ -242,17 +242,17 @@ function ReviewPembelian() {
                         Checkout
                     </div>
                     <div className={styles.fullname}>
-                        Nama Pembeli: {fullname}
+                        Full Name: {fullname}
                     </div>
                     <div className={styles.barang}>
-                        <p>Daftar Barang:</p>
+                        <p>List of Items:</p>
                         
                         <table cellPadding="10px" cellSpacing="0" className={styles.table}>
                             <thead bgcolor="#4F698F">
-                                <td>Nama</td>
-                                <td>Harga</td>
-                                <td>Jumlah</td>
-                                <td>Total Harga</td>
+                                <td>Item Name</td>
+                                <td>Price</td>
+                                <td>Count</td>
+                                <td>Total Price</td>
                             </thead>
                             <tbody>
                                 {barang.map((item)=> (    
@@ -266,6 +266,8 @@ function ReviewPembelian() {
                             </tbody>
                         </table>
                     </div>
+
+                    {/*                     
                     <div className={styles.alamat}>
                         <p>
                             Alamat:
@@ -307,13 +309,13 @@ function ReviewPembelian() {
                             }
                         </select>
                     </div>
-                    
+                     */}
                     <div className={styles.detailAlamat}>
-                        <p>Alamat Detail:</p>
+                        <p>Address:</p>
                         <input type="text" value={detailAlamat} onChange={handleChangeDetail}/>    
                     </div>
                     <div className={styles.harga}>
-                        Harga yang Harus dibayar: Rp.{total}
+                        Total Payment: Rp.{total}
                     </div>
                     <div className={styles.buy} onClick={handleSubmit}>
                         Confirm

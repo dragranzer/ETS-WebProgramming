@@ -53,14 +53,14 @@ function Register() {
             }else{
                 swal({
                     title: "Error",
-                    text: "Mohon Lengkapi Data",
+                    text: "Please Fill The Required Fields",
                     icon: "error",
                 });
             }
         }else{
             swal({
                 title: "Error",
-                text: "Mohon Lengkapi Data",
+                text: "Please Fill The Required Fields",
                 icon: "error",
             });
         }
@@ -84,7 +84,7 @@ function Register() {
 
         if(name === "username"){
             if(value === ""){
-                seterrMsgUsername("Mohon isi username");
+                seterrMsgUsername("Please fill username field");
             }else{
                 seterrMsgUsername("");
             }
@@ -93,7 +93,7 @@ function Register() {
 
         if(name === "fullname"){
             if(value === ""){
-                seterrMsgFullname("Mohon isi fullname");
+                seterrMsgFullname("Please fill full name field");
             }else{
                 seterrMsgFullname("");
             }
@@ -102,7 +102,7 @@ function Register() {
 
         if(name === "gender"){
             if(value === ""){
-                seterrMsgGender("Mohon isi gender");
+                seterrMsgGender("Please fill gender field");
             }else{
                 seterrMsgGender("");
             }
@@ -111,7 +111,7 @@ function Register() {
 
         if(name === "age"){
             if(value === ""){
-                seterrMsgAge("Mohon isi age");
+                seterrMsgAge("Please fill age field");
             }else{
                 seterrMsgAge("");
             }
@@ -120,7 +120,7 @@ function Register() {
 
         if(name === "password"){
             if(value === ""){
-                seterrMsgPassword("Mohon isi password");
+                seterrMsgPassword("Please fill password field");
             }else{
                 seterrMsgPassword("");
             }
@@ -129,7 +129,7 @@ function Register() {
 
         if(name === "passConfirm"){
             if(value !== state.password){
-                seterrMsgConfirm("konfirmasi tidak sesuai password");
+                seterrMsgConfirm("Password and confirm password doesn't match");
             }else{
                 seterrMsgConfirm("");
             }
@@ -155,70 +155,73 @@ function Register() {
                             Register
                         </div>
                         <div className="container">
-                            <div className={styles.box}>
-                                <div className="row">
-                                    <div className="col-6">
-                                        <div className={styles.caption}>
-                                            Full Name:
-                                        </div>
-                                        <input type="text" placeholder="      Username" value={state.fullname} name="fullname" onChange={onChange}/>
-                                        <div className={styles.errMsg}>
-                                            {errMsgFullname}
-                                        </div>
-                                        <div className={styles.caption}>
-                                        Gender:
-                                        </div>
-                                        
-                                        <label for="pria" >
-                                        <input type="radio" value="pria" name="gender" onChange={onChange} className={styles.radio}/>
-                                            Pria
-                                        </label>
-                                        
-                                        <label for="wanita" className={styles.radioLabel}>
-                                            <input type="radio" value="wanita" name="gender" onChange={onChange} className={styles.radio}/>
-                                            Wanita
-                                        </label>
-                                        <div className={styles.errMsg}>
-                                            {errMsgGender}
-                                        </div>
-                                        <div className={styles.caption} >
-                                            Password:
-                                        </div>
-                                        <input type="text" placeholder="      Password" value={state.password} name="password" onChange={onChange}/>
-                                        <div className={styles.errMsg}>
-                                            {errMsgPassword}
-                                        </div>
+                            <div className="row justify-content-center">
+                                {/* <div className="col-1"></div> */}
+
+                                <div className="col-9">
+                                    <div className={styles.caption}>
+                                        Full Name
                                     </div>
-                                    <div className="col-6">
-                                        <div className={styles.caption}>
-                                            Username:
-                                        </div>
-                                        
-                                        <input type="text" placeholder="      Username" value={state.username} name="username" onChange={onChange}/>
-                                        <div className={styles.errMsg}>
-                                            {errMsgUsername}
-                                        </div>
-                                        <div className={styles.caption}>
-                                            Age:
-                                        </div>
-                                        <input type="number" placeholder="      Age" value={state.age} name="age" onChange={onChange}/>
-                                        <div className={styles.errMsg}>
-                                            {errMsgAge}
-                                        </div>
-                                        <div className={styles.captionPassC}>
-                                            Password Confirm:
-                                        </div>
-                                        <input type="text" placeholder="      Password Confirm" value={state.passConfirm} name="passConfirm" onChange={onChange}/>
-                                        <div className={styles.errMsg}>
-                                            {errMsgConfirm}
-                                        </div>
+                                    <input type="text" placeholder="Enter your full name" value={state.fullname} name="fullname" onChange={onChange}/>
+                                    <div className={styles.errMsg}>
+                                        {errMsgFullname}
+                                    </div>
+
+                                    <div className={styles.caption}>
+                                        Username
+                                    </div>
+                                    
+                                    <input type="text" placeholder="Enter your username" value={state.username} name="username" onChange={onChange}/>
+                                    <div className={styles.errMsg}>
+                                        {errMsgUsername}
+                                    </div>
+
+                                    <div className={styles.caption} >
+                                        Password
+                                    </div>
+                                    <input type="password" placeholder="Enter your password" value={state.password} name="password" onChange={onChange}/>
+                                    <div className={styles.errMsg}>
+                                        {errMsgPassword}
+                                    </div>
+
+                                    <div className={styles.caption}>
+                                        Confirm Password
+                                    </div>
+                                    <input type="password" placeholder="Enter your confirm password" value={state.passConfirm} name="passConfirm" onChange={onChange}/>
+                                    <div className={styles.errMsg}>
+                                        {errMsgConfirm}
+                                    </div>
+                                    
+                                    <div className={styles.caption}>
+                                        Age
+                                    </div>
+                                    <input type="number" placeholder="Enter your age" value={state.age} name="age" onChange={onChange}/>
+                                    <div className={styles.errMsg}>
+                                        {errMsgAge}
+                                    </div>
+
+                                    <div className={styles.caption}>
+                                        Gender
+                                    </div>
+                                
+                                    <label for="pria" className={styles.radioLabel}>
+                                    <input type="radio" value="pria" name="gender" onChange={onChange} className={styles.radio}/>
+                                        Male
+                                    </label>
+                                    
+                                    <label for="wanita" className={styles.radioLabel}>
+                                        <input type="radio" value="wanita" name="gender" onChange={onChange} className={styles.radio}/>
+                                        Female
+                                    </label>
+                                    <div className={styles.errMsg}>
+                                        {errMsgGender}
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div onClick={handleSubmit}>
                             <div className={styles.signin}>
-                                <p>Submit</p>
+                                <p>Register</p>
                             </div>
                         </div>
                     </div>

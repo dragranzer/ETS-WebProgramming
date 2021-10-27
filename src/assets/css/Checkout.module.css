@@ -1,22 +1,19 @@
 .body{
     min-height: 700px;
-    height: 100%;
     width: 100%;
     background-image: url('../img/96622.jpg');
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-    padding-top: 70px;
+    padding: 70px 0;
     
 }
 
 .box{
-    width: 1168px;
-    height: 80%;
+    width: 80%;
     background: linear-gradient(111.42deg, #B1B1B1 17.4%, rgba(255, 255, 255, 0.5) 90.6%);
     backdrop-filter: blur(25px);
     border-radius: 20px;
-    margin: auto;
-    padding-left: 2%;
-    padding-bottom: 40px;
+    margin: 0 auto;
+    padding: 20px 40px 40px;
 }
 
 .title{
@@ -29,12 +26,14 @@
 }
 
 .table{
+    width: 80%;
     color: #FFFFFF;
     border-collapse: collapse;
-    margin: auto;
-    border: 1px solid black;
+    margin: 0 auto;
+    border: 2px solid black;
 }
 
+/*
 .alamat p{
     font-size: 24px;
     display: inline-block;
@@ -43,15 +42,13 @@
 .alamat select{
     margin-left: 20px;
 }
+*/
 
 .detailAlamat p{
     font-size: 24px;
     display: inline-block;
 }
 
-.detailAlamat input{
-    margin-left: 10px;
-}
 
 .barang p{
     font-size: 24px;
@@ -62,23 +59,22 @@
 }
 
 .harga{
+    margin-top: 20px;
     font-size: 24px;
 }
 
 .buy{
-    width: 96px;
-    height: 31px;
-    background: #29264A;
+    width: 10%;
+    background: #008000;
     border-radius: 20px;
     color: #ffffff;
     text-align: center;
-    margin-top: 30px;
-    font-size: 14px;
-    padding-top: 5px;
-    display: inline-block;
-    margin-left: 19px;
+    margin: 30px auto;
+    font-size: 20px;
+    padding: 15px;
+    /* display: inline-block; */
 }
 
 .buy:hover{
-    background: #5e55a8;
+    background: #006400;
 }
