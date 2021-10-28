@@ -211,8 +211,140 @@ function Profile() {
     // console.log(state)
     return (
         <div>
-             <NavALogin />
-             <div className={styles.body}>
+            <NavALogin />
+            <div className={styles.body}>
+                <div className={styles.boxProfile}>
+                    <div className="row">
+                        <div className="col-12">
+                            <div className={styles.title}>
+                                Profile
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="row">
+                        <div className="col-5">
+                            {
+                                editImgUrl ?
+                                    <div className={styles.upload}>
+                                        <input type="file" name="image" onChange={onChangeImg}/>
+                                        <br />
+                                        <div className={styles.buy} onClick={TutupInputImgUrl}>
+                                            Save
+                                        </div>
+                                    </div>
+                                :
+                                    <div className={styles.imgContainer}>
+                                        <img className={styles.ItemImg} src={state.image} alt="" />
+                                        <div className={styles.buy} onClick={BukaInputImgUrl}>
+                                            Edit Image
+                                        </div>
+                                    </div>
+                            }   
+                        </div>
+
+                        <div className="col-7">
+                            <table cellPadding="10px" cellSpacing="0" className={styles.table}>
+                                <thead>
+                                    <td></td>
+                                    <td></td>
+                                </thead>
+                                <tbody>
+                                    <tr className={styles.caption}>
+                                        <td> Full Name:</td>
+                                       
+                                        {editFullname ? 
+                                            <>
+                                                <td>
+                                                    <input type="text" value={state.fullname} name="fullname" onChange={handleChange} className={styles.input}/>
+                                                </td>
+                                                <td><FaIcons.FaSave onClick={TutupInputFullname}/></td>
+                                            </>
+                                        :
+                                            <>
+                                                <td>{user[0].fullname}</td>
+                                                <td><FaIcons.FaEdit onClick={BukaInputFullname} /></td>
+                                            </>
+                                        }
+                                    </tr>
+                                    <tr className={styles.caption}>
+                                        <td>Username:</td>
+                                        {editUsername ? 
+                                            <>
+                                                <td>
+                                                    <input type="text" value={state.username} name="username" onChange={handleChange} className={styles.input}/>
+                                                </td>
+                                                <td><FaIcons.FaSave onClick={TutupInputUsername}/></td>
+                                            </>
+                                        :
+                                            <>
+                                                <td>{user[0].username}</td>
+                                                <td><FaIcons.FaEdit onClick={BukaInputUsername}/></td>
+                                            </>
+                                        }
+                                    </tr>
+                                    <tr className={styles.caption}>
+                                        <td>Gender:</td>
+                                        {editGender ? 
+                                            <>
+                                                <td>
+                                                    <input type="text" value={state.gender} name="gender" onChange={handleChange} className={styles.input}/>
+                                                </td>
+                                                <td><FaIcons.FaSave onClick={TutupInputGender}/></td>
+                                            </>
+                                        :
+                                            <>
+                                                <td>{user[0].gender}</td>
+                                                <td><FaIcons.FaEdit onClick={BukaInputGender}/></td>
+                                            </>
+                                        }
+                                    </tr>
+                                    <tr className={styles.caption}>
+                                        <td> Age:</td>
+                                        {editAge ? 
+                                            <>
+                                                <td>
+                                                    <input type="text" value={state.age} name="age" onChange={handleChange} className={styles.input}/>
+                                                </td>
+                                                <td><FaIcons.FaSave onClick={TutupInputAge}/></td>
+                                            </>
+                                        :
+                                            <>
+                                                <td>{user[0].age}</td>
+                                                <td><FaIcons.FaEdit onClick={BukaInputAge}/></td>
+                                            </>
+                                        }
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div className={styles.password}>
+                                Password: 
+                                {editPassword ? 
+                                    <div>
+                                        <input type="text" value={state.password} name="password" onChange={handleChange} className={styles.input}/>
+                                        <span><FaIcons.FaSave onClick={TutupInputPassword}/></span>
+                                    </div>
+                                :
+                                    <div>
+                                        {user[0].password}
+                                        <span><FaIcons.FaEdit onClick={BukaInputPassword}/></span>
+                                    </div>
+                                }
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="row">
+                        <div className="col-2 mx-auto">
+                            <Link className={styles.logOut} to="/">
+                                Log Out
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+                {/* 
                 <div className="row">
                     <div className="col-5">
                         {
@@ -245,7 +377,7 @@ function Profile() {
                                 </thead>
                                 <tbody>
                                     <tr className={styles.caption}>
-                                        <td> Fullname:</td>
+                                        <td> Full Name:</td>
                                        
                                         {editFullname ? 
                                             <>
@@ -332,6 +464,7 @@ function Profile() {
                         </div>
                     </div>
                 </div>
+                */}
             </div>
         </div>
     )

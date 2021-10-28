@@ -1,17 +1,18 @@
 .body{
     width: 100%;
-    height: 700px;
+    min-height: 700px;
     background-image: url('../img/92-925774_sea-coral-wallpaper-hd.jpg');
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-    padding-top: 100px;
+    padding-top: 70px;
 }
 
 .boxProfile{
-    width: 745px;
-    height: 500px;
+    width: 80%;
+    min-height: 500px;
     background: linear-gradient(180deg, #29264A 0%, rgba(41, 38, 74, 0.5) 100%);
     border-radius: 20px;
-    padding-top: 20px;
+    padding: 20px 0;
+    margin: 0 auto;
 }
 
 .title{
@@ -22,7 +23,7 @@
     line-height: 62px;
     text-align: center;
     color: white;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .caption{
@@ -40,22 +41,22 @@
 }
 
 .logOut{
-    width: 96px;
-    height: 31px;
-    background: #29264A;
+    width: 100%;
+    background: #FF0000;
     border-radius: 20px;
     color: #ffffff;
     text-align: center;
     margin-top: 30px;
-    font-size: 14px;
-    padding-top: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
     display: inline-block;
-    margin-left: 45%;
-    
+    text-align: center;
 }
 
 .logOut:hover{
-    background: #5e55a8;
+    background: #8B0000;
+    color: white;
 }
 
 .input{
@@ -64,30 +65,32 @@
     width: 70%;
 }
 
+.imgContainer {
+    /* background-color: salmon; */
+    text-align: center;
+}
+
 .buy{
-    width: 96px;
-    height: 31px;
-    background: #29264A;
+    width: 40%;
+    background: #D2691E;
     border-radius: 20px;
     color: #ffffff;
     text-align: center;
     margin-top: 30px;
-    font-size: 14px;
-    padding-top: 5px;
-    margin-left: 19px;
-    margin: auto;
+    font-size: 15px;
+    padding: 8px;
+    margin: 20px auto;
 }
 
 .buy:hover{
-    background: #5e55a8;
+    background: #FF7F50;
 }
 
 .ItemImg{
-    width: 429px;
-    height: 456px;
-    border-radius: 500px;
-    margin-left: 20%;
-    margin-top: 10%;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    margin: 0 auto;
 }
 
 .upload{
@@ -101,10 +104,11 @@
 }
 
 .table{
+    width: 80%;
     color: #FFFFFF;
     border-collapse: collapse;
-    margin: auto;
-    border: 1px solid black;
+    margin: 0 auto;
+    border: 5px solid black;
 }
 
 .password{
