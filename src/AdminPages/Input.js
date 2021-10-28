@@ -62,28 +62,28 @@ function Input() {
                     }else{
                         swal({
                             title: "Error",
-                            text: "Foto Belum Terdeteksi",
+                            text: "Image has not detected",
                             icon: "error",
                         });
                     }
                 }else{
                     swal({
                         title: "Error",
-                        text: "Mohon Lengkapi Data",
+                        text: "Please Fill The Required Fields",
                         icon: "error",
                     });
                 }
             }else{
                 swal({
                     title: "Error",
-                    text: "Mohon Lengkapi Data",
+                    text: "Please Fill The Required Fields",
                     icon: "error",
                 });
             }
         }else{
             swal({
                 title: "Error",
-                text: "Mohon Lengkapi Data",
+                text: "Please Fill The Required Fields",
                 icon: "error",
             });
         }
@@ -102,7 +102,7 @@ function Input() {
 
         if(name === "name"){
             if(value === ""){
-                seterrMsgName("Mohon isi Name");
+                seterrMsgName("Please fill name field");
             }else{
                 seterrMsgName("");
             }
@@ -112,7 +112,7 @@ function Input() {
         if(name === "category"){
             console.log(value)
             if(value === ""){
-                seterrMsgKategori("Mohon isi Kategori");
+                seterrMsgKategori("Please fill category field");
             }else{
                 seterrMsgKategori("");
             }
@@ -121,7 +121,7 @@ function Input() {
 
         if(name === "stock"){
             if(value === ""){
-                seterrMsgStock("Mohon isi Stock");
+                seterrMsgStock("Please fill stock field");
             }else{
                 seterrMsgStock("");
             }
@@ -130,7 +130,7 @@ function Input() {
 
         if(name === "harga"){
             if(value === ""){
-                seterrMsgHarga("Mohon isi Harga");
+                seterrMsgHarga("Please fill price field");
             }else{
                 seterrMsgHarga("");
             }
@@ -139,7 +139,7 @@ function Input() {
 
         if(name === "description"){
             if(value === ""){
-                seterrMsgDescription("Mohon isi Description");
+                seterrMsgDescription("Please fill description field");
             }else{
                 seterrMsgDescription("");
             }
@@ -182,26 +182,26 @@ function Input() {
             <div className={styles.body}>
                 <div  className={styles.boxInput}>
                     <div className={styles.title}>
-                        Input Barang
+                        Add Item
                     </div>
-                    <div className="row">
+                    <div className="row justify-content-center">
                         
-                        <div className="col-5">
+                        {/* <div className="col-6">
                             <div className={styles.captionImg}>
-                                    Upload Foto:
+                                    Upload Image:
                             </div>
                             <input type="file" name="img" onChange={onChangeImg}/>
-                        </div>
-                        <div className="col-7">
+                        </div> */}
+                        <div className="col-10">
                             <div className={styles.caption}>
-                                Nama:
+                                Item Name
                             </div>
-                            <input type="text" placeholder="      Nama" value={state.name} name="name" onChange={onChange}/>
+                            <input type="text" placeholder="Item Name" value={state.name} name="name" onChange={onChange}/>
                             <div className={styles.errMsg}>
                                 {errMsgName}
                             </div>
                             <div className={styles.caption}>
-                                Kategori:
+                                Category
                             </div>
                             <select id="category" value={state.category} name="category" onChange={onChange} className={styles.select}>
                                 <option value="">Selected</option>
@@ -214,21 +214,21 @@ function Input() {
                                 {errMsgKategori}
                             </div>
                             <div className={styles.caption}>
-                                Stock:
+                                Stock
                             </div>
-                            <input type="number" placeholder="      Jumlah Barang" value={state.stock} name="stock" onChange={onChange}/>
+                            <input type="number" placeholder="Item Stock" value={state.stock} name="stock" onChange={onChange}/>
                             <div className={styles.errMsg}>
                                 {errMsgStock}
                             </div>
                             <div className={styles.caption}>
-                                Harga:
+                                Price
                             </div>
-                            <input type="number" placeholder="      Harga" value={state.harga} name="harga" onChange={onChange}/>
+                            <input type="number" placeholder="Price" value={state.harga} name="harga" onChange={onChange}/>
                             <div className={styles.errMsg}>
                                 {errMsgHarga}
                             </div>
                             <div className={styles.caption}>
-                                Deskripsi:
+                                Description
                             </div>
                             <textarea name="" id="" cols="50" rows="5" value={state.description} name="description" onChange={onChange}>
 
@@ -236,6 +236,16 @@ function Input() {
                             <div className={styles.errMsg}>
                                 {errMsgDescription}
                             </div>
+
+                            <div className={styles.captionImg}>
+                                    Upload Image
+                            </div>
+                            <input type="file" name="img" onChange={onChangeImg}/>
+                        </div>
+                    </div>
+
+                    <div className="row justify-content-center">
+                        <div className="col-2">
                             <Link className={styles.signin} to="#" onClick={handleSubmit}>
                                 <div className={styles.signin}>
                                     <p>Submit</p>

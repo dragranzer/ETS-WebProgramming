@@ -1,36 +1,32 @@
 .body{
     width: 100%;
     min-height: 700px;
-    height: 100%;
     background-image: url('../img/Deep-sea.jpg');
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-    padding-top: 50px;
+    padding: 70px 0;
 }
 
 .content{
-    padding-top: 40px;
-    width: 1002px;
-    min-height: 500px;
-    height: 80%;
-    padding-bottom: 50px;
+    width: 80%;
+    padding: 40px 0;
     background: linear-gradient(111.42deg, #B1B1B1 17.4%, rgba(255, 255, 255, 0.5) 90.6%);
     backdrop-filter: blur(25px);
     /* Note: backdrop-filter has minimal browser support */
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     border-radius: 20px;
-    margin-bottom: 100px;
 }
 
 .table{
-
-    /* color: #FFFFFF; */
+    width: 90%;
     border-collapse: collapse;
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid black;
+    margin: 0 auto;
+    border: 2px solid black;
     background: #FFFFFF;
-    margin-bottom:40px;
+}
+
+thead td{
+    font-size: 15px;
+    font-weight: bold;
 }
 
 .title{

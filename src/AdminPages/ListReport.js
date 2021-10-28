@@ -7,7 +7,7 @@ import useGetLaporan from '../hooks/useGetLaporan'
 function ListReport() {
     const {laporans, loading, error} = useGetLaporan()
     if (loading){
-        return <h1>Getting Laporan...</h1>
+        return <h1>Getting Report...</h1>
     }
     console.log(laporans)
     return (
@@ -18,11 +18,11 @@ function ListReport() {
                     <div className={styles.title}>Sell Report</div>
                     <table cellPadding="10px" cellSpacing="0" className={styles.table}>
                         <thead bgcolor="#4F698F">
-                            <td>Nama Pembeli</td>
-                            <td>Alamat</td>
-                            <td>Tanggal</td>
-                            <td>Waktu</td>
-                            <td>Total Harga</td>
+                            <td>Name</td>
+                            <td>Address</td>
+                            <td>Date</td>
+                            <td>Time</td>
+                            <td>Total Price</td>
                         </thead>
                         <tbody>
                         {laporans.map((item)=> (    

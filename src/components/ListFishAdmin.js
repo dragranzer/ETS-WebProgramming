@@ -28,7 +28,7 @@ const ListFishAdmin = ({category, description, harga, id, imgUrl, stock, name, h
                 {name}
             </div>
             <div className={styles.ket}>
-                Harga: Rp.{harga}
+                Price: Rp.{harga}
             </div>
             <div className={styles.ket}>
                 Stock: {stock}
@@ -37,7 +37,7 @@ const ListFishAdmin = ({category, description, harga, id, imgUrl, stock, name, h
                 Category: {category}
             </div>
             <div className={styles.detail} onClick={()=>handleDelete(id)}>
-                Hapus
+                Delete
             </div>
             <div className={styles.buy} onClick={editClick}>
                 Edit

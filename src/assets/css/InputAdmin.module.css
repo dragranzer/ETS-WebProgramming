@@ -1,18 +1,18 @@
 .body{
     width: 100%;
-    height: 800px;
+    min-height: 700px;
     background-image: url('../img/Deep-sea.jpg');
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-    padding-top: 100px;
+    padding: 70px 0;
 }
 
 .boxInput{
-    width: 1232px;
-    height: 600px;
+    width: 60%;
     background: linear-gradient(100.54deg, rgba(252, 252, 252, 0.5) 0.44%, rgba(252, 252, 252, 0.5) 0.45%, rgba(196, 196, 196, 0.5) 100%);
     backdrop-filter: blur(15px);
     border-radius: 20px;
-    margin: auto;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .title{
@@ -29,12 +29,11 @@
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
-    margin-left: 15%;
     margin-top: 10px;
 }
 
 textarea{
-    margin-left: 110px;
+    width: 80%
 }
 
 .admin{
@@ -49,32 +48,31 @@ textarea{
 }
 
 .signin{
-    width: 150px;
-    height: 40px;  
+    width: 100%;
     background: #4964AB;
     border-radius: 20px;
     text-align: center;
-    margin: auto;
+    margin: 0 auto;
     text-decoration: none;
+    padding: 5px 0;
 }
 
 .signin p{
-    padding-top: 5px;
     color: white;
+    font-size: 20px;
 }
 
 .select{
-    margin-left: 110px;
-    width: 44%;
+    width: 40%;
 }
 
 .errMsg{
     /* background-color: aqua; */
     width: 70%;
-    margin-left: 120px;
-    color: rgb(0, 17, 255);
+    color: red;
 }
 
 .captionImg{
-    margin-left: 80px;
+    /* margin-left: 80px; */
+    margin-top: 20px;
 }
