@@ -15,6 +15,7 @@ import useUpdatePassword from "../hooks/useUpdatePassword";
 import useUpdateImage from "../hooks/useUpdateImage";
 import { app } from "../base";
 
+// show profile
 function Profile() {
     const name = useSelector((state) => state.keranjang.user);
     const id = useSelector((state) => state.keranjang.id);

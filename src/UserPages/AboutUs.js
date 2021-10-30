@@ -2,6 +2,7 @@ import React from 'react'
 import NavALogin from '../components/NavALogin'
 import styles from '../assets/css/AboutUs.module.css'
 
+// about us
 function AboutUs() {
     return (
         <div>

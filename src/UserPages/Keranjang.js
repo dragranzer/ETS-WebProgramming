@@ -6,6 +6,7 @@ import ListKeranjang from '../components/ListKeranjang';
 import { hapusKeranjang } from '../store/KeranjangSlice';
 import {useHistory} from "react-router-dom";
 
+// cart system
 function Keranjang() {
     let history = useHistory();
     const barang = useSelector((state) => state.keranjang.barang);
