@@ -3,6 +3,7 @@ import NavBLogin from '../components/NavBLogin'
 import styles from '../assets/css/AboutUs.module.css'
 import {useHistory} from "react-router-dom";
 
+// about us at login page
 function AboutUsLogin() {
     let history = useHistory();
     return (

@@ -1,5 +1,6 @@
 import React from 'react'
 
+// handle not found
 function NotFound() {
     return (
         <div>

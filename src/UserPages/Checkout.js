@@ -13,6 +13,7 @@ import {useHistory} from "react-router-dom";
 import Select, { OnChangeValue, StylesConfig } from 'react-select';
 import swal from 'sweetalert';
 
+// finalize transaction
 function ReviewPembelian() {
     let history = useHistory();
     const fullname = useSelector((state) => state.keranjang.fullname);

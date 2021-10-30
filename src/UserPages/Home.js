@@ -6,6 +6,7 @@ import useGetAllFish from "../hooks/useGetAllFish";
 import ListFish from "../components/ListFish";
 import { useSelector, useDispatch } from 'react-redux';
 
+// home
 function Home() {
     const { loading, error, fishes } = useGetAllFish();
     const category = useSelector((state) => state.keranjang.category);

@@ -6,6 +6,7 @@ import useInsertUser from "../hooks/useInsertUser";
 import { useState } from "react"
 import swal from 'sweetalert';
 
+// handle user registration
 function Register() {
     let history = useHistory();
 

@@ -4,6 +4,7 @@ import styles from '../assets/css/DetailFish.module.css';
 import {useSelector, useDispatch} from 'react-redux';
 import { tambahKeranjang } from '../store/KeranjangSlice';
 
+// to view fish's details
 function DetailFish() {
     const fish = useSelector((state) => state.keranjang.fish);
     const dispatch = useDispatch();

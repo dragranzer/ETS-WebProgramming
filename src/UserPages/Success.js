@@ -2,6 +2,7 @@ import React from 'react'
 import NavALogin from '../components/NavALogin'
 import styles from '../assets/css/Success.module.css'
 
+// success
 function Success() {
     return (
         <div>
