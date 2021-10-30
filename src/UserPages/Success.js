@@ -9,7 +9,8 @@ function Success() {
             <div className={styles.body}>
                 <div className={styles.contentBox}>
                     <div className={styles.title}>
-                        Selamat Pembelian Anda Sedang di Proses
+                        <h1>Thank You !</h1>
+                        <h2>Your payment has been processed</h2>
                     </div>
                 </div>
             </div>

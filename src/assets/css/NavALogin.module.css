@@ -33,7 +33,8 @@
 }
 
 .navMenu {
-    background-color: #4F698F;
+    background-color: #FFEBCD;
+    border: 2px solid brown;
     width: 20%;
     height: 100%;
     display: flex;
@@ -41,13 +42,13 @@
     position: fixed;
     top: 0;
     /* left: -100%; */
-    transition: 850ms;
+    transition: all 3s linear;
     z-index: 2;
 }
 
 .navMenuActive{
     left: 0;
-    transition: 350ms;
+    transition: all 3s linear;
     display: none;
 }
 
@@ -58,24 +59,21 @@
     padding: 0px;
     list-style: none;
     height: 60px;
-}
-
-.navText{
-    color: #ffffff;
+    color: black;
 }
 
 .navText:hover{
-    background-color: rgb(14, 80, 179);
+    background-color: #FF7F50;
 }
 
 .navMenuItems{
     width: 100%;
+    padding: 0 30px;
 }
 
-.navToggle{
-    background-color: black;
+.navbarToggle{
     width: 100%;
-    height: 80px;
+    height: 10%;
     display: flex;
     justify-content: start;
     align-items: center;
